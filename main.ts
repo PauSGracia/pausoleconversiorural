@@ -77,22 +77,22 @@ Item.__initItem()
 //  -- ANIMATIONS --
 controller.up.onEvent(ControllerButtonEvent.Pressed, function on_up_pressed() {
     animation.runImageAnimation(nena, assets.animation`
-            villager1WalkBack
+            nena-walk-back
             `, 200, false)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function on_left_pressed() {
     animation.runImageAnimation(nena, assets.animation`
-            villager1WalkLeft
+            nena-walk-left
             `, 200, false)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function on_right_pressed() {
     animation.runImageAnimation(nena, assets.animation`
-            villager1WalkRight
+            nena-walk-right
             `, 200, false)
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function on_down_pressed() {
     animation.runImageAnimation(nena, assets.animation`
-            villager1WalkFront
+            nena-walk-front
             `, 200, false)
 })
 //  -- TRADING --
@@ -548,7 +548,7 @@ tree2 = sprites.create(img`
         .......ee.......
         `, SpriteKind.Tree)
 nena = sprites.create(assets.image`
-    villager1WalkFront1
+    nena-front
     `, SpriteKind.Player)
 trade_menu_open = 0
 controller.moveSprite(nena)

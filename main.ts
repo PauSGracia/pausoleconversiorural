@@ -550,6 +550,9 @@ tree2 = sprites.create(img`
 nena = sprites.create(assets.image`
     nena-front
     `, SpriteKind.Player)
+let nena2 = assets.image`
+    nena-front
+    `
 trade_menu_open = 0
 controller.moveSprite(nena)
 nena.setStayInScreen(true)

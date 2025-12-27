@@ -546,6 +546,10 @@ tree2 = sprites.create(img("""
 nena = sprites.create(assets.image("""
     nena-front
     """), SpriteKind.player)
+nena2 = assets.image("""
+    nena-front
+    """)
+    
 trade_menu_open = 0
 controller.move_sprite(nena)
 nena.set_stay_in_screen(True)

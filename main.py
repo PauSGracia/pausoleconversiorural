@@ -36,7 +36,7 @@ class Item:
 def on_up_pressed():
     animation.run_image_animation(nena,
         assets.animation("""
-            nena-animation-up
+            villager1WalkBack
             """),
         200,
         False)
@@ -45,7 +45,7 @@ controller.up.on_event(ControllerButtonEvent.PRESSED, on_up_pressed)
 def on_left_pressed():
     animation.run_image_animation(nena,
         assets.animation("""
-            nena-animation-left
+            villager1WalkLeft
             """),
         200,
         False)
@@ -54,7 +54,7 @@ controller.left.on_event(ControllerButtonEvent.PRESSED, on_left_pressed)
 def on_right_pressed():
     animation.run_image_animation(nena,
         assets.animation("""
-            nena-animation-right
+            villager1WalkRight
             """),
         200,
         False)
@@ -63,7 +63,7 @@ controller.right.on_event(ControllerButtonEvent.PRESSED, on_right_pressed)
 def on_down_pressed():
     animation.run_image_animation(nena,
         assets.animation("""
-            nena-animation-down
+            villager1WalkFront
             """),
         200,
         False)
@@ -544,7 +544,7 @@ tree2 = sprites.create(img("""
         """),
     SpriteKind.Tree)
 nena = sprites.create(assets.image("""
-    nena-front
+    villager1WalkFront1
     """), SpriteKind.player)
 trade_menu_open = 0
 controller.move_sprite(nena)

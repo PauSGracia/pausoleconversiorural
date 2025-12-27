@@ -76,16 +76,24 @@ Item.__initItem()
 
 //  -- ANIMATIONS --
 controller.up.onEvent(ControllerButtonEvent.Pressed, function on_up_pressed() {
-    animation.runImageAnimation(nena, assets.animation`nena-walk-back`, 200, false)
+    animation.runImageAnimation(nena, assets.animation`
+            nena-animation-up
+            `, 200, false)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function on_left_pressed() {
-    animation.runImageAnimation(nena, assets.animation`nena-walk-left`, 200, false)
+    animation.runImageAnimation(nena, assets.animation`
+            nena-animation-left
+            `, 200, false)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function on_right_pressed() {
-    animation.runImageAnimation(nena, assets.animation`nena-walk-right`, 200, false)
+    animation.runImageAnimation(nena, assets.animation`
+            nena-animation-right
+            `, 200, false)
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function on_down_pressed() {
-    animation.runImageAnimation(nena, assets.animation`nena-walk-front`, 200, false)
+    animation.runImageAnimation(nena, assets.animation`
+            nena-animation-down
+            `, 200, false)
 })
 //  -- TRADING --
 function on_a_pressed() {
@@ -539,11 +547,11 @@ tree2 = sprites.create(img`
         .....eeeeee.....
         .......ee.......
         `, SpriteKind.Tree)
-nena = sprites.create(assets.image`nena-front`, SpriteKind.Player)
+nena = sprites.create(assets.image`nena`, SpriteKind.Player)
 trade_menu_open = 0
-controller.moveSprite(nena)
-nena.setStayInScreen(true)
-nena.setPosition(80, 95)
+//  controller.move_sprite(nena)
+//  nena.set_stay_in_screen(True)
+//  nena.set_position(80, 95)
 house.setPosition(33, 90)
 tree.setPosition(109, 90)
 tree2.setPosition(125, 99)

@@ -35,28 +35,36 @@ class Item:
 # -- ANIMATIONS --
 def on_up_pressed():
     animation.run_image_animation(nena,
-        assets.animation("""nena-walk-back"""),
+        assets.animation("""
+            nena-animation-up
+            """),
         200,
         False)
 controller.up.on_event(ControllerButtonEvent.PRESSED, on_up_pressed)
 
 def on_left_pressed():
     animation.run_image_animation(nena,
-        assets.animation("""nena-walk-left"""),
+        assets.animation("""
+            nena-animation-left
+            """),
         200,
         False)
 controller.left.on_event(ControllerButtonEvent.PRESSED, on_left_pressed)
 
 def on_right_pressed():
     animation.run_image_animation(nena,
-        assets.animation("""nena-walk-right"""),
+        assets.animation("""
+            nena-animation-right
+            """),
         200,
         False)
 controller.right.on_event(ControllerButtonEvent.PRESSED, on_right_pressed)
 
 def on_down_pressed():
     animation.run_image_animation(nena,
-        assets.animation("""nena-walk-front"""),
+        assets.animation("""
+            nena-animation-down
+            """),
         200,
         False)
 controller.down.on_event(ControllerButtonEvent.PRESSED, on_down_pressed)
@@ -535,11 +543,11 @@ tree2 = sprites.create(img("""
         .......ee.......
         """),
     SpriteKind.Tree)
-nena = sprites.create(assets.image("""nena-front"""), SpriteKind.player)
+nena = sprites.create(assets.image("""nena"""), SpriteKind.player)
 trade_menu_open = 0
-controller.move_sprite(nena)
-nena.set_stay_in_screen(True)
-nena.set_position(80, 95)
+# controller.move_sprite(nena)
+# nena.set_stay_in_screen(True)
+# nena.set_position(80, 95)
 house.set_position(33, 90)
 tree.set_position(109, 90)
 tree2.set_position(125, 99)
